@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniprojeto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/2734236.ico" type="image/icon">
+
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab" id="loginTab">Login</button>
+        <button class="tab" id="registerTab">Cadastro</button>
+        <button class="tab" id="profileTab">Perfil</button>
+    </div>
+    <div class="content" id="loginContent">
+        <h2 id="title">Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Usuário" required>
+            <input type="password" id="loginPassword" placeholder="Senha" required>
+            <button id="button" type="submit">Entrar</button>
+        </form>
+    </div>
+    <div class="content" id="registerContent">
+        <h2 id="title">Cadastro</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Usuário" required>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="password" id="registerPassword" placeholder="Senha" required>
+            <input type="password" id="repeatPassword" placeholder="Repetir Senha" required>
+            <button id="button" type="submit">Registrar</button>
+        </form>
+        </form>
+    </div>
+    <div class="content" id="profileContent">
+        <h2 id="title">Perfil</h2>
+        <p>Usuário: <span id="username"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <button id="editProfile">Editar Perfil</button>
+        <button id="deleteProfile">Excluir Perfil</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
